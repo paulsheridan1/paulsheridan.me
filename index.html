@@ -1,0 +1,135 @@
+<!-- Design by Dave Squires - davesquires.me -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Paul Sheridan</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+        <link rel="stylesheet" href="https://davesq23.github.io/basic/basic.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="container">
+            <div class="section-1">
+                <div class="main" id="home">
+                    <div class="row">
+                        <div class="profile col-4">
+                            <img id="profile" src="images/profile_image.jpg" width="60%">
+                        </div>
+                        <div class="col-8 name">
+                            <h1 id="name">Paul Sheridan</h1>
+                            <!--<h3 id="occupation">Student in New Zealand</h3>-->
+                            <!--<ul class="soc">
+                                <li><a class="soc-mail" href="mailto:hipaul.sh@gmail.com"></a></li>
+                                <li><a class="soc-instagram" href="https://instagram.com/paul_sheridan12"></a></li>
+                                <li><a class="soc-snapchat" href="https://snapchat.com/add/paulied123"></a></li>
+                                <li><a class="soc-facebook" href="https://www.facebook.com/paul.sheridan.5836"></a></li>
+                                <li><a class="soc-github soc-icon-last" href="https://github.com/paulsheridan1"></a></li>
+                            </ul>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="main" id="about-section">
+                    <div class="row">
+                        <div class="col-12 about">
+                            <h1 id="about">About</h1>
+                            <!--<h3 id="occupation">Student in New Zealand</h3>-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 bio">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="main" id="contact-section">
+                    <div class="row">
+                        <div class="col-12 contact">
+                            <h1 id="contact">Contact</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 form">
+                            <div id="form-div">
+                                <form action="http://formspree.io/hipaul.sh@gmail.com" class="form" id="form" method="post" name="form">
+
+                                  <p class="">
+                                    <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name-form" />
+                                  </p>
+
+                                  <p class="email">
+                                    <input name="_replyto" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                                  </p>
+
+                                  <p class="text">
+                                    <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="msg" placeholder="Message"></textarea>
+                                  </p>
+
+
+                                  <div class="submit">
+                                    <input type="submit" value="Submit" id="button"/>
+                                  </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+
+            <div class="section-2">
+                <div class="main">
+                <div class="nav">
+                    <a href="#home" class="active" id="nav-home" onclick="navHome()">Home</a>
+                    <a href="#about-section" class="" id="nav-about" onclick="navAbout()">About</a>
+                    <a href="#contact-section" class="" id="nav-contact" onclick="navContact()">Contact</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Javascript -->
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- Smooth Scrolling -->
+        <script>
+            $(function() {
+              $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html, body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
+        </script>
+        
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
