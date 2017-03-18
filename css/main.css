@@ -55,8 +55,19 @@ body {
     margin-top: 1%;
     font-family: sans-serif;
     font-weight: lighter;
+    font-size: 1.75vw;
     color: white;
     text-shadow: -1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#viclink {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#viclink:hover {
+    font-size: 1.9vw;
+    text-decoration: underline;
 }
 
 /* About */
